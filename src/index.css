@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-weld-orange: #ff6b00;
+    --color-weld-blue: #38bdf8;
+    --color-weld-dark: #090b10;
+  }
+  
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.font-mono-numbers {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom welding glow effects */
+.glow-orange {
+  box-shadow: 0 0 25px -4px rgba(255, 107, 0, 0.45);
+}
+
+.glow-orange-lg {
+  box-shadow: 0 0 45px -6px rgba(255, 107, 0, 0.6);
+}
+
+.glow-blue {
+  box-shadow: 0 0 30px -4px rgba(56, 189, 248, 0.6);
+}
+
+.text-glow-orange {
+  text-shadow: 0 0 20px rgba(255, 107, 0, 0.5);
+}
+
+.text-glow-blue {
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+}
+
+/* Glassmorphism styling */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(22, 33, 62, 0.75);
+  border-color: rgba(255, 107, 0, 0.35);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090b10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6b00;
+}
+
+/* Subtle animated welding seam */
+@keyframes weldLaser {
+  0% {
+    left: -10%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
+}
+
+.weld-spark-runner {
+  animation: weldLaser 4.5s ease-in-out infinite;
+}

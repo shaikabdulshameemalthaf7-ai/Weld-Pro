@@ -1,0 +1,6 @@
+{
+  "name": "WeldPro - Professional Welding & Metal Fabrication",
+  "description": "Portfolio and services for WeldPro, a premier welding and custom metal fabrication shop delivering high-precision residential, commercial, and industrial solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
