@@ -62,7 +62,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             <div className="space-y-4">
               {/* Phone Dispatch */}
               <a
-                href="tel:+15553829353"
+                href="tel:+919876543210"
                 className="group flex items-center gap-4 p-5 rounded-2xl bg-[#0c1017] border border-slate-800 hover:border-orange-500/50 hover:bg-[#101522] transition-all"
               >
                 <div className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-orange-400 group-hover:bg-orange-500 group-hover:text-white transition-colors">
@@ -73,7 +73,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     Direct Workshop Phone
                   </span>
                   <strong className="text-base font-bold text-white group-hover:text-orange-400 transition-colors">
-                    +1 (555) 382-9353
+                    +91 9876543210
                   </strong>
                   <span className="text-[11px] text-emerald-400 mt-0.5">
                     ● Mon–Sat 7:00 AM – 6:00 PM EST
@@ -83,7 +83,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
               {/* WhatsApp Direct */}
               <a
-                href="https://wa.me/15553829353?text=Hi%20WeldPro,%20I%20have%20a%20welding%20project%20inquiry"
+                href="https://wa.me/919876543210?text=Hi%20WeldPro,%20I%20have%20a%20welding%20project%20inquiry"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center justify-between p-5 rounded-2xl bg-[#0c1017] border border-slate-800 hover:border-emerald-500/50 hover:bg-[#0c1618] transition-all"
@@ -109,7 +109,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
               {/* Email */}
               <a
-                href="mailto:quotes@weldprowelding.com"
+                href="mailto:randomemail@gmail.com"
                 className="group flex items-center gap-4 p-5 rounded-2xl bg-[#0c1017] border border-slate-800 hover:border-orange-500/50 hover:bg-[#101522] transition-all"
               >
                 <div className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-orange-400 group-hover:bg-orange-500 group-hover:text-white transition-colors">
@@ -120,7 +120,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     Engineering Blueprints & RFQs
                   </span>
                   <strong className="text-base font-bold text-white group-hover:text-orange-400 transition-colors">
-                    quotes@weldprowelding.com
+                    randomemail@gmail.com
                   </strong>
                   <span className="text-[11px] text-slate-400 mt-0.5">
                     Guaranteed response within 24 business hours
@@ -138,10 +138,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     Fabrication Workshop
                   </span>
                   <strong className="text-base font-bold text-white">
-                    1420 Ironworks Parkway, Suite 100
+                    1420, Avenue St, California
                   </strong>
                   <span className="text-xs text-slate-300 mt-0.5">
-                    Metro Industrial Logistics Park, East Bay Area
+                    California, United States
                   </span>
                   <span className="text-[11px] text-slate-400 mt-2">
                     Client visits & material inspections welcomed by appointment.
@@ -255,7 +255,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                         required
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="+91 9876543210"
                         className="w-full px-4 py-2.5 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 text-sm"
                       />
                     </div>
@@ -319,9 +319,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
                   <div className="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-400 flex items-center justify-between">
                     <span>Have blueprint PDFs or photos?</span>
-                    <span className="text-orange-400 font-medium">
-                      Email to quotes@weldprowelding.com
-                    </span>
+                    <a
+                      href="mailto:randomemail@gmail.com"
+                      className="text-orange-400 font-medium hover:underline"
+                    >
+                      Email to randomemail@gmail.com
+                    </a>
                   </div>
 
                   <button
